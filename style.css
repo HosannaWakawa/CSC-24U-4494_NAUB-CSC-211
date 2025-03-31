@@ -28,20 +28,18 @@ header{
     display: flex;
     padding: 4%;
     margin-bottom: 5%;
-    padding-bottom: 7%;
     text-align: center;
-    height: 150px;
+    height: 90px;
 }
 h1{
     position: absolute;
     right: 5%;
     text-decoration: none;
-    font-size: 15px;
-    margin-top: 1.5%;
+    font-size: 12px;
+    margin-top: 4%;
     padding: 5px;
     color:white;
-    text-decoration: none;
-    font-size: 30px;
+    text-decoration: none;    
     font-family: "monaco",monospace;
     text-transform: uppercase;
     font-weight: 800;
@@ -52,12 +50,11 @@ h2{
     top: 45px;
     right: 12%;
     text-decoration: none;
-    font-size: 25px;
-    margin-top: 8%;
+    font-size: 12px;
+    margin-top: 4%;
     padding: 5px;
     color:white;
     text-decoration: none;
-    font-size: 30px;
     font-family: "monaco",monospace;
     text-transform: uppercase;
     font-weight: 800;
@@ -65,7 +62,7 @@ h2{
 a{
     color:white;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 12px;
     font-family: "monaco",monospace;
     text-transform: uppercase;
     font-weight: 800;
@@ -76,14 +73,14 @@ a{
     text-transform: uppercase;
     font-weight: 900;
     color: white;
-    font-size: 40px;
+    font-size: 15px;
     font-weight: 900;
     margin-bottom: 4%;
     
 }
 p{
     font-family: "monaco ",monospace;
-    font-size: 25px;
+    font-size: 8px;
     color: #ffffff;
     text-transform: capitalize;
     margin-top: 1%;
@@ -91,7 +88,7 @@ p{
 }
 marquee{
     font-family: "monaco ",monospace;
-    font-size: 25px;
+    font-size: 10px;
     color: #ffffff;
     text-transform: capitalize;
     margin-top: 2%;
@@ -107,7 +104,7 @@ table{
     margin-right:auto;
         
     font-family: "monaco ",monospace;
-    font-size: 30px;
+    font-size: 10px;
     background: white;
     width: 95%;
     
@@ -124,53 +121,31 @@ th{
     border-radius: 2px;
     padding-bottom: 2px;
     padding-top: 2px;
-    height: 65px;
+    height: 20px;
 }
 td{
     border:0.5px solid black;
     border-radius: 5px;
     padding-bottom: 4px;
     padding-top: 4px;
-    font-size: 30px;
+    font-size: 10px;
     color: #1b1b1bf1;
-    height: 65px;
+    height: 20px;
 }
 #logo{
-    width: 170px;
-    height:170px;
-    border-radius: 95px;
+    width: 80px;
+    height:80px;
+    border-radius: 90px;
     object-fit: cover;
 }
-input{
-    width: 95%;
-    object-fit: cover;
-    padding-bottom: 4px;
-    padding-left: 0px;
-    padding-top: 4px; 
-    margin-bottom: 10px;   
-    
-}
+
 select{
-    width: 95%;
+    width: 90%;
+    height: 20px;    
     padding-bottom: 4px;
     padding-top: 4px;
-}
-form{
-   font-family: "courier new",monospace; 
-}
-input{
     font-family: "courier new",monospace;
-    font-size: 30px;
-    text-transform: capitalize;
-    margin-bottom: 6px;  
-    border: .5px solid grey;
-    border-radius: 4px;
-    height: 90px;
-    
-}
-select{
-   font-family: "courier new",monospace;
-   font-size: 30px;  
+   font-size: 12px;  
    text-transform: capitalize;
    margin-bottom: 10px;
    border: .5px solid grey;
@@ -178,31 +153,48 @@ select{
     padding-bottom: 4px;
     padding-top: 4px;
     background: #ffffff;
-    height: 90px;
+      height: 40px;
 }
-.radio{
-    width: 40px;
-    height: 40px;
-    margin-bottom: 50px;
+form{
+   font-family: "courier new",monospace; 
+}
+input{
+    font-family: "courier new",monospace;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin-bottom: 6px;  
+    border: .5px solid grey;
+    border-radius: 4px;
+    width: 89%;
+    object-fit: cover;
+    height: 40px;   
+    padding-left: 0px;
+    padding-left: 1%;
+  
     
+}
+
+.radio{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 15px;
 }
 label{
     margin-bottom: 15px;
-    font-size: 30px;
+    font-size: 12px;
     text-align: left;
-    
 }
 h3{
     font-family: "monaco",monospace;
-    font-size: 35px;
+    font-size: 12px;
     /**font-weight: 200;**/
     margin-bottom: 5px;
     color: #ffffff;
     
 }
 #submit{
-    width: 95%;
-    height: 90px;
+    width: 90%;
+    height: 38px;
     padding-bottom: 4px;
     padding-top: 4px;
     background: #40f6ff;
@@ -224,10 +216,11 @@ select:hover{
     display: ;
 }
 button{
-    width: 95%;
+    width: 88%;
     object-fit: cover;
-    height: 90px;
+    height: 30px;
     padding-bottom: 4px;
+    padding-left: 4px;    
     padding-top: 4px;
     background: #40f6ff78;
     border: none;
@@ -238,7 +231,6 @@ button{
     margin-bottom: 6px;  
     border: .5px solid grey;
     border-radius: 4px;
-    font-size: 30px;
 }
 #register-btn{
     display: ;
