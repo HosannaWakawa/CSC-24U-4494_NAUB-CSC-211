@@ -256,3 +256,9 @@ button{
     color: black;
     text-transform: capitalize;
 }
+#hname{
+    width: 70px;
+}
+#SN{
+    width: 20px;
+}
