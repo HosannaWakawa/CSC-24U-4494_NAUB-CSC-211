@@ -251,6 +251,7 @@ button{
 #homenav{
     display: ;
     margin-right: 9%;
+    margin-top: -2%;
 }
 #details{
     color: black;
@@ -261,4 +262,167 @@ button{
 }
 #SN{
     width: 20px;
+}
+@media(width:1024px){
+    table{
+        
+    }
+    h1{
+        font-size: 15px;
+        right: 8.9%;
+        margin-top: 0;
+    }
+    #homenav{
+        font-size: 15px;
+        right: 13%;
+        margin-top: 0%;
+        margin-right: 0%;
+
+    }
+    h2{
+        font-size: 15px;
+        position: absolute;
+        top: 0;
+        margin-top: 8%;
+        
+    }
+    #fcom{
+        font-size: 20px;
+    }
+    #p1{
+        font-size: 13px;
+    }
+    th{
+        height: 30px;
+        font-size: 20px;
+    }
+    td{
+        height: 30px;
+        font-size: 20px;
+    }
+    input{
+        height: 50px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+    select{
+        height: 50px;
+        border-radius: 8px;
+    }
+    #submit{
+        height: 50px;
+        border-radius: 8px;
+    }
+    h3{
+        font-size: 20px;
+    }
+    #male{
+        width: 25px;
+        height: 25px;
+    }
+    #female{
+        width: 25px;
+        height: 25px;
+    }
+    label{
+        font-size: 16px;
+    }
+    #flabel{
+        font-size: 15px;
+    }
+    #mlabel{
+        font-size: 15px;
+    }
+}
+@media(min-width:1440px){
+    table{
+        
+    }
+    h1{
+        font-size: 20px;
+        right: 9.5%;
+        margin-top: 0;
+    }
+    #homenav{
+        font-size: 20px;
+        right: 13%;
+        margin-top: 0%;
+        margin-right: 0%;
+
+    }
+    h2{
+        font-size: 20px;
+        position: absolute;
+        top: 0;
+        margin-top: 8%;
+        
+    }
+    #fcom{
+        font-size: 25px;
+    }
+    #p1{
+        font-size: 16px;
+    }
+    th{
+        height: 40px;
+        font-size: 25px;
+    }
+    td{
+        height: 40px;
+        font-size: 25px;
+    }
+    input{
+        height: 60px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    select{
+        height: 60px;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    #submit{
+        height: 50px;
+        font-size: 20px;
+        border-radius: 8px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    #male{
+        width: 35px;
+        height: 35px;
+    }
+    #female{
+        width: 35px;
+        height: 35px;
+    }
+    label{
+        font-size: 16px;
+    }
+    #flabel{
+        font-size: 20px;
+    }
+    #mlabel{
+        font-size: 20px;
+    }
+}
+@media(width=768px){
+    h1{
+        font-size: 15px;
+        right: 9.5%;
+        margin-top: 0;
+    }
+    h2{
+        font-size: 15px;
+        position: absolute;
+        top: 0;
+        margin-top: 8%;
+    }
+    #homenav{
+        font-size: 15px;
+        right: 13%;
+        margin-top: 0%;
+        margin-right: 0%;
+    }
 }
