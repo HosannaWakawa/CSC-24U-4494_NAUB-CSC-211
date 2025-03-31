@@ -1,0 +1,253 @@
+#home{
+    display: ;
+}
+*{
+    padding: 0;
+    margin:0;
+    
+}
+body{
+    min-height:400px;
+    background:url('b-img3.jpg') no-repeat;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+  
+    
+}
+header{
+    background: red;
+    border-bottom: 1px inset black;
+    color: white;
+    display: flex;
+    padding: 4%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+h1{
+    position: absolute;
+    right: 5%;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 1.5%;
+    padding: 5px;
+    color:white;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "monaco",monospace;
+    text-transform: uppercase;
+    font-weight: 800;
+    
+}
+h2{
+    position: absolute;
+    top: 45px;
+    right: 12%;
+    text-decoration: none;
+    font-size: 15px;
+    margin-top: 1.5%;
+    padding: 5px;
+    color:white;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "monaco",monospace;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+a{
+    color:white;
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "monaco",monospace;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+#fcom{
+    font-family: "monaco",monospace;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+    font-size: 16px;
+    font-weight: 900;
+    
+}
+p{
+    font-family: "monaco ",monospace;
+    font-size: 8px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-top: 2%;
+    font-weight: 300;
+}
+marquee{
+    font-family: "monaco ",monospace;
+    font-size: 8px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-top: 2%;
+    font-weight: 300;
+}
+table{
+    border:
+    .5px solid black;
+    border-radius: 5px;
+    border-collapse: collapse;
+    margin-left:auto;
+    margin-top: 2%;
+    margin-right:auto;
+    
+    font-family: "monaco ",monospace;
+    font-size: 13px;
+    background: white;
+    
+    
+}
+
+th{
+    border:0.5px solid black;
+    background: #ffffff6d;
+    padding-right:1%;
+    min-width: 50px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+td{
+    border:0.5px solid black;
+    border-radius: 5px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    font-size: 12px;
+    color: #1b1b1bf1;
+}
+#logo{
+    width: 70px;
+    height:70px;
+    border-radius: 35px;
+    object-fit: cover;
+}
+input{
+    width: 88%;
+    object-fit: cover;
+    height: 30px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-top: 4px;
+    
+}
+select{
+    width: 90%;
+    height: 38px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+form{
+   font-family: "courier new",monospace; 
+}
+input{
+    font-family: "courier new",monospace;
+    text-transform: capitalize;
+    margin-bottom: 6px;  
+    border: .5px solid grey;
+    border-radius: 4px;
+}
+select{
+   font-family: "courier new",monospace;  
+   text-transform: capitalize;
+   margin-bottom: 6px;
+   border: .5px solid grey;
+    border-radius: 4px; 
+    padding-bottom: 4px;
+    padding-top: 4px;
+    background: #ffffff;
+}
+.radio{
+    width: 15px;
+    height: 15px;
+    margin-bottom: 15px;
+}
+label{
+    margin-bottom: 15px;
+    font-size: 13px;
+    text-align: left;
+}
+h3{
+    font-family: "monaco",monospace;
+    font-size: 13px;
+    /**font-weight: 200;**/
+    margin-bottom: 5px;
+    color: #ffffff;
+    
+}
+#submit{
+    width: 90%;
+    height: 38px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    background: #40f6ff;
+}
+#submit:hover{
+    background: #40f6ff78;
+    border: none;
+}
+input::placeholder {
+    color: black;
+}
+input:hover{
+    background: #40f6ff78;
+}
+select:hover{
+    background: #40f6ff78;
+}
+#registration{
+    display: ;
+}
+button{
+    width: 88%;
+    object-fit: cover;
+    height: 30px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+    padding-top: 4px;
+    background: #40f6ff78;
+    border: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: "courier new",monospace;
+    text-transform: capitalize;
+    margin-bottom: 6px;  
+    border: .5px solid grey;
+    border-radius: 4px;
+}
+#register-btn{
+    display: ;
+}
+#p1{
+    display: ;
+}
+#p2{
+    color: #00ff04;
+    background: #0000005d;
+    display: ;
+}
+#commingsoon{
+    display: ;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+#homenav{
+    display: ;
+    margin-right: 30px;
+}
+#details{
+    color: black;
+    text-transform: capitalize;
+}
