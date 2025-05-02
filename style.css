@@ -65,22 +65,24 @@ a{
     font-family: "monaco",monospace;
     text-transform: uppercase;
     font-weight: 800;
+    
 }
 
 #appname{
     font-family: "monaco",monospace;
     text-transform: uppercase;
     font-weight: 900;
-    color: rgb(110, 100, 1);
+    color: white;
     font-size: 25px;
     font-weight: 900;
     margin-bottom: 4%;
+    background: #0000005d;
     
 }
 p{
     font-family: "monaco ",monospace;
     font-size: 20px;
-    color: rgb(110, 100, 1);
+    color: white;
     text-transform: capitalize;
     margin-top: 1%;
     font-weight: 300;
