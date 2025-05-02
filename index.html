@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigerian Army University Biu</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="logo.jpg">
+        <h1 onclick="register()" id="register-btn">lecturer login</h1>
+        <h2 onclick="submit()">submit assignment</h2> 
+        <h1 id="homenav" onclick="home()">home</h1>
+    </header>
+    <div id="home">
+    <p id="appname"> Life&nbsp;Easy&nbsp;Assessment<br>
+    </p>
+    <p id="p1">the below students have submmited their assingments, submmit by clicking link above</p>
+    <marquee id="p2">Successfully submitted</marquee>
+    <table id="table">
+        <tr>
+            <th id="SN">S/N</th>
+          <th id="Hname">Matric No.</th>            
+          <th>course code</th>
+          <th>assignment title</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>SEN/24U/1111</td>            
+            <td>200</td>
+            <td>CYB</td>
+
+        </tr>
+        <tr>
+             <td>2</td>
+            <td>Great Ibkwe</td>            
+            <td>200</td>
+            <td>SEN</td>
+        </tr>
+        <tr>
+             <td>3</td>
+            <td>Amina Abdulahi</td>            
+            <td>100</td>
+            <td>CSC</td>
+        </tr>
+        <tr>
+             <td>4</td>
+            <td>Ezra Ioyka</td>            
+            <td>200</td>
+            <td>IFT</td>
+        </tr>
+        <tr>
+             <td>5</td>
+            <td>Favour Chinedu</td>            
+            <td>300</td>
+            <td>IFS</td>
+        </tr>
+        <tr>
+             <td>6</td>
+            <td>Peter Martins</td>            
+            <td>200</td>
+            <td>CSC</td>
+        </tr>
+        <tr>
+             <td>7</td>
+            <td>Muazu Ibrahim</td>            
+            <td>200</td>
+            <td>CYB</td>
+        </tr>
+        <tr>
+             <td>8</td>
+            <td>Auwal Muhammad</td>            
+            <td>200</td>
+            <td>SEN</td>
+        </tr>
+        <tr>
+             <td>9</td>
+            <td>Esther Gaius</td>            
+            <td>400</td>
+            <td>IFT</td>
+        </tr>
+        <tr id="row10">
+            <td>10</td>
+            <td id="matrictable"></td>            
+            <td id="coursecodetable"></td>
+            <td id="coursetitletable"></td>
+        </tr>
+    </table>
+    </div>
+    
+    <div id="registration">
+    <div id="registration-page"><h3>Registration</h3>
+   <form id="myform">
+        <input type="text" id="matric" placeholder="Matric No." oninput="this.value=this.value.slice(0,12)"><br>
+        <select id="course" name="Department">
+            <option>Course Code</option>            
+            <option id="csc" value="NAUB CSC 211">NAUB CSC 211</option>
+            <option id="ift" value="COS 201">COS 2O1</option>
+        </select>
+        <br>
+        <select id="coursetitle" name="coursetitle"><option>assignment title</option>
+            <option value="WEB DEVELOPMENT GROUP PROJECT(NAUB CSC 211)">WEB DEVELOPMENT GROUP PROJECT(NAUB CSC 211)</option>
+            <option value="CREATE AND STYLE DIV ASSIGNMENT(NAUB CSC 211)">CREATE AND STYLE DIV ASSIGNMENT(NAUB CSC 211)</option>
+            <option value="READ PAGE 1-54(COS 201)">READ PAGE 1-54(COS 201)</option>
+            <option value="CODE TO TAKE USER INPUT IN JAVA(COS 201)">CODE TO TAKE USER INPUT IN JAVA(COS 201)</option>
+        </select><br>
+       <input type="file" name="file" id="file" accept=".html, .css, .java, .js, .png, .jpg, .jpeg, .pdf, .docx" placeholder="upload file">
+    </form> 
+    <button onclick="home2()" id="submit">Submit</button>
+    </div>    
+</div>
+
+<div id="login">
+    <h3 id="commingsoon">Comming Soon<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></b><span id="details">Powered by Hosanna Tech <br>CSC/24U/4494<br>Naub CSC 211 Web Programming<br>Assignment project<br>Thank you <br></span> Mr Luwani Ishaya</h3>
+</div>
+    
+</body>
+</html>

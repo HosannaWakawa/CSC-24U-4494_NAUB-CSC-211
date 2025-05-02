@@ -20,23 +20,19 @@ function home2(){
     
     
     
-const firstname=document.getElementById("firstname").value;
+const matric=document.getElementById("matric").value;
 
-const nameCell=document.getElementById("namecell");
-
-
-const secondname=document.getElementById("secondname").value;
-nameCell.innerHTML=firstname+" "+secondname;
-
+matrictable.innerHTML=matric;
+const matricetable=document.getElementById("matrictable")
+matric.innerHTML=matric;
 const course=document.getElementById("course").value
 
-const coursetable=document.getElementById("coursetable")
-coursetable.innerHTML=course;
+const coursecodetable=document.getElementById("coursecodetable")
+coursecodetable.innerHTML=course;
 
-const level=document.getElementById("level").value
-
-const leveltable=document.getElementById("leveltable")
-leveltable.innerHTML=level;
+const coursetitle=document.getElementById("coursetitle").value
+const coursetitletable=document.getElementById("coursetitletable")
+coursetitletable.innerHTML=coursetitle;
 
 const gender=document.querySelector('input[name="gender"]:checked').value;
 
@@ -46,7 +42,7 @@ gendertable.innerHTML=gender;
 
 
 
-function register() {
+function submit() {
  document.getElementById('home').style.display="none";
     document.getElementById("registration").style.removeProperty("display");
     document.getElementById('commingsoon').style.display="none";

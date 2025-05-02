@@ -8,7 +8,7 @@
 }
 body{
     min-height:400px;
-    background:url('b-img3.jpg') no-repeat;
+    background:url('background.jpg') no-repeat;
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
@@ -33,10 +33,10 @@ header{
 }
 h1{
     position: absolute;
-    right: 5%;
+    left: 75.0%;
     text-decoration: none;
-    font-size: 12px;
-    margin-top: 4.6%;
+    font-size: 25px;
+    top: 60px;
     padding: 5px;
     color:white;
     text-decoration: none;    
@@ -47,11 +47,10 @@ h1{
 }
 h2{
     position: absolute;
-    top: 45px;
-    right: 12%;
+    top: 100px;
+    left: 75%;
     text-decoration: none;
-    font-size: 12px;
-    margin-top: 4%;
+    font-size: 25px;
     padding: 5px;
     color:white;
     text-decoration: none;
@@ -68,20 +67,20 @@ a{
     font-weight: 800;
 }
 
-#fcom{
+#appname{
     font-family: "monaco",monospace;
     text-transform: uppercase;
     font-weight: 900;
-    color: white;
-    font-size: 15px;
+    color: rgb(110, 100, 1);
+    font-size: 25px;
     font-weight: 900;
     margin-bottom: 4%;
     
 }
 p{
     font-family: "monaco ",monospace;
-    font-size: 8px;
-    color: #ffffff;
+    font-size: 20px;
+    color: rgb(110, 100, 1);
     text-transform: capitalize;
     margin-top: 1%;
     font-weight: 300;
@@ -104,7 +103,7 @@ table{
     margin-right:auto;
         
     font-family: "monaco ",monospace;
-    font-size: 12px;
+    font-size: 20px;
     background: white;
     width: 95%;
     
@@ -128,15 +127,17 @@ td{
     border-radius: 5px;
     padding-bottom: 4px;
     padding-top: 4px;
-    font-size: 12px;
+    font-size: 20px;
     color: #1b1b1bf1;
     height: 20px;
+    text-transform: uppercase;
 }
 #logo{
-    width: 80px;
-    height:80px;
+    width: 120px;
+    height:120px;
     border-radius: 90px;
     object-fit: cover;
+    margin-top: -15px;
 }
 
 select{
@@ -145,7 +146,7 @@ select{
     padding-bottom: 4px;
     padding-top: 4px;
     font-family: "courier new",monospace;
-   font-size: 12px;  
+   font-size: 20px;  
    text-transform: capitalize;
    margin-bottom: 10px;
    border: .5px solid grey;
@@ -160,8 +161,8 @@ form{
 }
 input{
     font-family: "courier new",monospace;
-    font-size: 12px;
-    text-transform: capitalize;
+    font-size: 20px;
+    text-transform: uppercase;
     margin-bottom: 6px;  
     border: .5px solid grey;
     border-radius: 4px;
@@ -186,7 +187,7 @@ label{
 }
 h3{
     font-family: "monaco",monospace;
-    font-size: 12px;
+    font-size: 25px;
     /**font-weight: 200;**/
     margin-bottom: 5px;
     color: #ffffff;
@@ -258,171 +259,8 @@ button{
     text-transform: capitalize;
 }
 #hname{
-    width: 70px;
+    width: 40px;
 }
 #SN{
     width: 20px;
-}
-@media(min-width:1024px){
-    table{
-        
-    }
-    h1{
-        font-size: 15px;
-        right: 8.9%;
-        margin-top: -5%;
-    }
-    #homenav{
-        font-size: 15px;
-        right: 13%;
-        margin-top: 0%;
-        margin-right: 0%;
-
-    }
-    h2{
-        font-size: 15px;
-        position: absolute;
-        top: 0;
-        margin-top: 8%;
-        
-    }
-    #fcom{
-        font-size: 20px;
-    }
-    #p1{
-        font-size: 13px;
-    }
-    th{
-        height: 30px;
-        font-size: 20px;
-    }
-    td{
-        height: 30px;
-        font-size: 20px;
-    }
-    input{
-        height: 50px;
-        font-size: 15px;
-        border-radius: 8px;
-    }
-    select{
-        height: 50px;
-        border-radius: 8px;
-    }
-    #submit{
-        height: 50px;
-        border-radius: 8px;
-    }
-    h3{
-        font-size: 20px;
-    }
-    #male{
-        width: 25px;
-        height: 25px;
-    }
-    #female{
-        width: 25px;
-        height: 25px;
-    }
-    label{
-        font-size: 16px;
-    }
-    #flabel{
-        font-size: 15px;
-    }
-    #mlabel{
-        font-size: 15px;
-    }
-}
-@media(min-width:1440px){
-    table{
-        
-    }
-    h1{
-        font-size: 20px;
-        right: 9.5%;
-        margin-top: -5%;
-    }
-    #homenav{
-        font-size: 20px;
-        right: 13%;
-        margin-top: 0%;
-        margin-right: 0%;
-
-    }
-    h2{
-        font-size: 20px;
-        position: absolute;
-        top: 0;
-        margin-top: 8%;
-        
-    }
-    #fcom{
-        font-size: 25px;
-    }
-    #p1{
-        font-size: 16px;
-    }
-    th{
-        height: 40px;
-        font-size: 25px;
-    }
-    td{
-        height: 40px;
-        font-size: 25px;
-    }
-    input{
-        height: 60px;
-        font-size: 20px;
-        border-radius: 10px;
-    }
-    select{
-        height: 60px;
-        font-size: 20px;
-        border-radius: 10px;
-    }
-    #submit{
-        height: 50px;
-        font-size: 20px;
-        border-radius: 8px;
-    }
-    h3{
-        font-size: 25px;
-    }
-    #male{
-        width: 35px;
-        height: 35px;
-    }
-    #female{
-        width: 35px;
-        height: 35px;
-    }
-    label{
-        font-size: 16px;
-    }
-    #flabel{
-        font-size: 20px;
-    }
-    #mlabel{
-        font-size: 20px;
-    }
-}
-@media(width=768px){
-    h1{
-        font-size: 15px;
-        right: 9.5%;
-        margin-top: 0;
-    }
-    h2{
-        font-size: 15px;
-        position: absolute;
-        top: 0;
-        margin-top: 8%;
-    }
-    #homenav{
-        font-size: 15px;
-        right: 13%;
-        margin-top: 0%;
-        margin-right: 0%;
-    }
 }
