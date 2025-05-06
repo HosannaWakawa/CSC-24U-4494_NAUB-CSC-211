@@ -7,6 +7,7 @@ function refresh(){
 }
 
 function home(){
+  document.getElementById("lecturerHome").style.display="none"
   document.getElementById("logOutBtn").style.display="none"
   document.getElementById('lecturerLoginAccepted').style.display="none";
  document.getElementById('registration').style.display="none"; 
@@ -24,6 +25,7 @@ function home(){
     document.getElementById('homenav').style.display="none";
 };
 function lecturerLogin(){
+  document.getElementById("lecturerHome").style.display="none"
   document.getElementById("lecturerLoginPage").style.display="block";
   document.getElementById("logOutBtn").style.display="none"
   document.getElementById('lecturerLoginAccepted').style.display="none";
@@ -33,6 +35,7 @@ function lecturerLogin(){
  document.getElementById("denyresubmission").style.display="none"
 }
 function lecturerLoginAccepted(){
+  document.getElementById('ViewMarkedAssignments').style.display='none'
   document.getElementById("lecturerLoginPage").style.display="block"
   const staffId = document.getElementById('staffID').value.toLowerCase();
   const password = document.getElementById('lecturerPassword').value.toLowerCase();
@@ -53,11 +56,13 @@ function lecturerLoginAccepted(){
  document.getElementById("realSubmit").style.display="none"
  document.getElementById("fakeSubmit").style.display="none"
  document.getElementById("logOutBtn").style.display="block"
+ document.getElementById("lecturerHome").style.display="block"
  document.getElementById("viewBtn").style.display="none"
  document.getElementById("MarkNewSubmission").style.display="none"
   return true;
 }
 function home2(){
+  document.getElementById("lecturerHome").style.display="none"
   document.getElementById('lecturerLogin').style.display="none";
   document.getElementById("fakeSubmit").style.display="block"
   document.getElementById("logOutBtn").style.display="none"
@@ -72,7 +77,7 @@ function home2(){
     
     
     
-const matric=document.getElementById("matric").value;
+const matric=document.getElementById("matric").value ;
 
 matrictable.innerHTML=matric;
 const matricetable=document.getElementById("matrictable")
@@ -95,6 +100,7 @@ gendertable.innerHTML=gender;
 
 
 function submit() {
+  document.getElementById("lecturerHome").style.display="none"
   document.getElementById("logOutBtn").style.display="none"
   document.getElementById("fakeSubmit").style.display="block"
   document.getElementById("realSubmit").style.display="none"
@@ -116,6 +122,7 @@ const table=document.getElementById("table")
 
 
 function login() {
+  document.getElementById("lecturerHome").style.display="none"
   document.getElementById("logOutBtn").style.display="none"
     document.getElementById('registration').style.display="none";
     document.getElementById('home').style.display="none";
@@ -154,33 +161,35 @@ function login() {
     });
 
 function preview(){
+  document.getElementById("lecturerHome").style.display="block"
   document.getElementById('myform').style.display="none";
   document.getElementById("logOutBtn").style.display="block"
   
 }
 function denySameMatric(){
-  document.getElementById("logOutBtn").style.display="none"
+  document.getElementById("lecturerHome").style.display="none"
+  document.getElementById("logOutBtn").style.display="none";
   const matric1 = document.getElementById('matric').value.toLowerCase();
   const course1 = document.getElementById('course').value.toLowerCase();
   const coursetitle1 = document.getElementById('coursetitle').value.toLowerCase();
 
   const matric2 = document.getElementById('denySameMatric').value.toLowerCase();
-  const course2 = document.getElementById('Ressubmitcourse').value.toLowerCase();
-  const coursetitle2 = document.getElementById('Ressubmitcoursetitle').value.toLowerCase();
+  const course2 = document.getElementById('resubmitcourse').value.toLowerCase();
+  const coursetitle2 = document.getElementById('resubmitcoursetitle').value.toLowerCase();
 
   if (matric2 === matric1 && course2 === course1 && coursetitle2 === coursetitle1) {
     alert('You cannot resubmit the same assignment');
     document.getElementById('denySameMatric').value = '';
-    document.getElementById('Ressubmitcourse').selectedIndex = 0;
-    document.getElementById('Ressubmitcoursetitle').selectedIndex = 0;
+    document.getElementById('resubmitcourse').selectedIndex = 0;
+    document.getElementById('resubmitcoursetitle').selectedIndex = 0;
     return false; // prevent submission
   } else if (matric2 === matric1 && course2 === course1) {
     alert('You are resubmitting the same course, choose another course title or another matric number');
-    document.getElementById('Ressubmitcoursetitle').selectedIndex = 0;
+    document.getElementById('resubmitcoursetitle').selectedIndex = 0;
     return false;
   } else if (matric2 === matric1 && coursetitle2 === coursetitle1) {
     alert('You are resubmitting the same assignment title, choose another course or another matric number');
-    document.getElementById('Ressubmitcourse').selectedIndex = 0;
+    document.getElementById('resubmitcourse').selectedIndex = 0;
     return false;
   } else if (course2 === course1 && coursetitle2 === coursetitle1) {
     alert('You are resubmitting the same course and assignment title, choose another matric number');
@@ -192,17 +201,18 @@ function denySameMatric(){
     return false;
   } else if (course2 === course1) {
     alert('You have submitted this course before, change it');
-    document.getElementById('Ressubmitcourse').selectedIndex = 0;
+    document.getElementById('resubmitcourse').selectedIndex = 0;
     return false;
   } else if (coursetitle2 === coursetitle1) {
     alert('You have submitted this assignment title before, change it');
-    document.getElementById('Ressubmitcoursetitle').selectedIndex = 0;
+    document.getElementById('resubmitcoursetitle').selectedIndex = 0;
     return false;
   }
   // allow submission
   return true;
 }
 function resubmit(){
+  document.getElementById("lecturerHome").style.display="none"
   document.getElementById("logOutBtn").style.display="none"
   document.getElementById('home').style.display="none";
   document.getElementById("denyresubmission").style.display="block"
@@ -214,6 +224,62 @@ function viewNewSubmmision(){
   document.getElementById("markedAssingments").style.display="none"
   document.getElementById("NewSubmission").style.display="none"
 }
+function viewMarkedSubmmision(){
+  document.getElementById("viewBtn").style.display="block"
+  document.getElementById("MarkNewSubmission").style.display="none"
+  document.getElementById("markedAssingments").style.display="none"
+  document.getElementById("NewSubmission").style.display="none"
+  document.getElementById('ViewMarkedAssignments').style.display='block'
+}
+function lecturerHome(){
+  document.getElementById("MarkNewSubmission").style.display="none";
+  document.getElementById('NewSubmission').style.display='block'
+  document.getElementById('markedAssingments').style.display='block'
+  document.getElementById("lecturerLoginPage").style.display="block"
+  document.getElementById("lecturerLoginPage").style.display="none";
+  document.getElementById('lecturerLoginAccepted').style.display="block";
+ document.getElementById('registration').style.display="none"; 
+ document.getElementById("lecturerLoginAccepted").style.display="block"
+ document.getElementById("lecturerLogin-btn").style.display="none"
+ document.getElementById("realSubmit").style.display="none"
+ document.getElementById("fakeSubmit").style.display="none"
+ document.getElementById("logOutBtn").style.display="block"
+ document.getElementById("lecturerHome").style.display="block"
+ document.getElementById("viewBtn").style.display="none"
+ document.getElementById("ViewMarkedAssignments").style.display="none"
+}
+function record(){
+  document.getElementById("MarkNewSubmission").style.display="none";
+  const matric1= document.getElementById("matric").value
+  const course1= document.getElementById("course").value
+  const title1= document.getElementById("coursetitle").value
+  const score1= document.getElementById("assignmentScore").value
 
+  const matric2= document.getElementById('markedMatrictable')
+  const course2= document.getElementById('MarkedCoursecodetable')
+  const title2= document.getElementById('MarkedCoursetitletable')
+  const score2= document.getElementById('scoretable')
+
+  matric2.innerHTML=matric1
+  course2.innerHTML=course1
+  title2.innerHTML=title1
+  score2.innerHTML=score1
+
+
+  document.getElementById('NewSubmission').style.display='block'
+  document.getElementById('markedAssingments').style.display='block'
+  document.getElementById("lecturerLoginPage").style.display="block"
+  document.getElementById("lecturerLoginPage").style.display="none";
+  document.getElementById('lecturerLoginAccepted').style.display="block";
+ document.getElementById('registration').style.display="none"; 
+ document.getElementById("lecturerLoginAccepted").style.display="block"
+ document.getElementById("lecturerLogin-btn").style.display="none"
+ document.getElementById("realSubmit").style.display="none"
+ document.getElementById("fakeSubmit").style.display="none"
+ document.getElementById("logOutBtn").style.display="block"
+ document.getElementById("lecturerHome").style.display="block"
+ document.getElementById("viewBtn").style.display="none"
+ document.getElementById("ViewMarkedAssignments").style.display="none"
+}
 
  

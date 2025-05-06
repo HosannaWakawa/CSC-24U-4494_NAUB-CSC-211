@@ -220,7 +220,7 @@ select:hover{
 button{
     width: 88%;
     object-fit: cover;
-    height: 30px;
+    height: 50px;
     padding-bottom: 4px;
     padding-left: 4px;    
     padding-top: 4px;
@@ -302,7 +302,7 @@ button{
 }
 .assignmentDiv{
   width: 80%;
-  height: 10vh;
+  height: 30vh;
   background: rgb(255,255,255);
   color: black;
   margin-left: auto;
@@ -314,6 +314,10 @@ button{
   font-weight: 900;
   text-transform: uppercase;
   border: 0.5px solid black;
+}
+#assignmentScore{
+ width: 87%;
+ align-self: left;  
 }
 #assignments{
   display: grid;
@@ -344,7 +348,7 @@ button{
 #MarkNewSubmission{
   width: 80%;
   background: white;
-  height: 13vh;
+  height: 50vh;
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
@@ -352,5 +356,23 @@ button{
 }
 #NewSubmissionTable th, #NewSubmissionTable td{
   border: 0.3px solid white;
-  font-size: 15px;
+  font-size: 20px;
 }
+#markedAssingmentsTable th, #markedAssingmentsTable td{
+    border: 0.3px solid white;
+    font-size: 20px;
+  }
+  #viewBtn1{
+    width: 10%;
+    background-color: red;
+    border: 0.3px solid white;
+  }
+  #viewBtn2{
+    width: 10%;
+    background-color: red;
+    border: 0.3px solid white;
+  }
+  #print{
+    margin-top: 2%;
+    background: #40f6ff;
+  }

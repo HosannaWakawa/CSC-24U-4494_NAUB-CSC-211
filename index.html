@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nigerian Army University Biu</title>
@@ -10,82 +9,35 @@
 <body>
     <header>
         <img id="logo" src="logo.jpeg">
-        <h1 onclick="register()" id="register-btn">lecturer login</h1>
-        <h2 onclick="submit()">submit assignment</h2> 
+        <h1 onclick="lecturerLogin()" id="lecturerLogin-btn">lecturer login</h1>
+        <h2 onclick="home2()" id="logOutBtn">Log out</h2>
+        <h2 id="realSubmit" onclick="submit()">submit assignment</h2> 
+        <h2 id="fakeSubmit" onclick="resubmit()">submit assignment</h2>
         <h1 id="homenav" onclick="home()">home</h1>
+        <h1 id="lecturerHome" onclick="lecturerHome()">lecturer home</h1>
     </header>
     <div id="home">
     <p id="appname"> Life&nbsp;Easy&nbsp;Assessment<br>
     </p>
-    <p id="p1">the below students have submmited their assingments, submmit by clicking link above</p>
-    <p id="p2">Successfully submitted as S/N.10</p>
+    <p id="p1">Available Assignment Submissions</p>
+    <p id="p2">Successfully submitted</p>
     <table id="table">
         <tr>
-            <th id="SN">S/N</th>
-          <th id="Hname">Matric No.</th>            
-          <th>course code</th>
+           <th>course code</th>
           <th>assignment title</th>
+          <th>deadline</th>
         </tr>
         <tr>
-            <td>1</td>
-            <td>SEN/24U/1111</td>            
-            <td>200</td>
-            <td>CYB</td>
+            <td>NAUB CSC 211</td>
+            <td>Create and style Html Divisions</td>
+            <td> 25/5/25</td>
 
         </tr>
         <tr>
-             <td>2</td>
-            <td>Great Ibkwe</td>            
-            <td>200</td>
-            <td>SEN</td>
-        </tr>
-        <tr>
-             <td>3</td>
-            <td>Amina Abdulahi</td>            
-            <td>100</td>
-            <td>CSC</td>
-        </tr>
-        <tr>
-             <td>4</td>
-            <td>Ezra Ioyka</td>            
-            <td>200</td>
-            <td>IFT</td>
-        </tr>
-        <tr>
-             <td>5</td>
-            <td>Favour Chinedu</td>            
-            <td>300</td>
-            <td>IFS</td>
-        </tr>
-        <tr>
-             <td>6</td>
-            <td>Peter Martins</td>            
-            <td>200</td>
-            <td>CSC</td>
-        </tr>
-        <tr>
-             <td>7</td>
-            <td>Muazu Ibrahim</td>            
-            <td>200</td>
-            <td>CYB</td>
-        </tr>
-        <tr>
-             <td>8</td>
-            <td>Auwal Muhammad</td>            
-            <td>200</td>
-            <td>SEN</td>
-        </tr>
-        <tr>
-             <td>9</td>
-            <td>Esther Gaius</td>            
-            <td>400</td>
-            <td>IFT</td>
-        </tr>
-        <tr id="row10">
-            <td>10</td>
-            <td id="matrictable"></td>            
-            <td id="coursecodetable"></td>
-            <td id="coursetitletable"></td>
+            <td>Cos 201</td>
+            <td>Take User input in java code</td>
+            <td> 25/5/25</td>
+
         </tr>
     </table>
     </div>
@@ -97,31 +49,100 @@
         <select id="course" name="Department">
             <option>Course Code</option>            
             <option id="csc" value="NAUB CSC 211">NAUB CSC 211</option>
-            <option id="ift" value="COS 201">COS 2O1</option>
+            <option id="cos" value="COS 201">COS 2O1</option>
         </select>
         <br>
         <select id="coursetitle" name="coursetitle"><option>assignment title</option>
-            <option value="WEB DEVELOPMENT GROUP PROJECT(NAUB CSC 211)">WEB DEVELOPMENT GROUP PROJECT(NAUB CSC 211)</option>
-            <option value="CREATE AND STYLE DIV ASSIGNMENT(NAUB CSC 211)">CREATE AND STYLE DIV ASSIGNMENT(NAUB CSC 211)</option>
-            <option value="READ PAGE 1-54(COS 201)">READ PAGE 1-54(COS 201)</option>
-            <option value="CODE TO TAKE USER INPUT IN JAVA(COS 201)">CODE TO TAKE USER INPUT IN JAVA(COS 201)</option>
+            <option value="CREATE AND STYLE DIV ASSIGNMENT">CREATE AND STYLE DIV ASSIGNMENT(NAUB CSC 211)</option>
+            <option value="CODE TO TAKE USER INPUT IN JAVA">CODE TO TAKE USER INPUT IN JAVA(COS 201)</option>
         </select><br>
-       <input type="file" name="file" id="file" accept=".html, .css, .java, .js, .png, .jpg, .jpeg, .pdf, .docx" placeholder="upload file">
+       <input type="file" name="file" class="fileinput" id="fileInput" accept=".html, .css, .java, .js, .png, .jpg, .jpeg, .pdf, .docx" placeholder="upload file">
     </form> 
-    <button onclick="home2()" id="submit">Submit</button>
-    </div>    
+   <button onclick="home2()" id="submit">Submit</button>
 </div>
 
 <div id="login">
     <h3 id="commingsoon">Comming Soon<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></b><span id="details">Powered by Hosanna Tech <br>CSC/24U/4494<br>Naub CSC 211 Web Programming<br>Assignment project<br>Thank you <br></span> Mr Luwani Ishaya</h3>
 </div>
 
-<div id="lecturerlogin">
-    <p>new submissions(with mark button)</p>
+</div>
+<div id="lecturerLogin">
+  <div id="lecturerLoginPage">
+     <form id="lecturerLoginForm">
+        <input type="text" id="staffID" placeholder="Staff Identity" oninput="this.value=this.value.slice(0,12)"><br>
+        <input type="password" id="lecturerPassword" placeholder="password">
+        </form>
+         <button onclick="return lecturerLoginAccepted(); return false" id="submit">Login</button>
+         </div>
+        
+    <!--<p>new submissions(with mark button)</p>
     <p>marked submissions</p>
     <p>print recorded assesment document</p>
-    <p>at the end print life easy</p>
-</div>
-    
+    <p>at the end print life easy</p>-->
+    <div id="lecturerLoginAccepted">
+      <div id="assignments">
+      <div class="assignmentDiv" id="NewSubmission">New Submission<button onclick="viewNewSubmmision()" class="viewBtn">view</button></div>
+      <div class="assignmentDiv" id="markedAssingments">Marked assingments<button onclick="viewMarkedSubmmision()" class="viewBtn">view</button></div>
+      </div>
+      <div id="MarkNewSubmission">
+        <p>New submission</p>
+        <table id="NewSubmissionTable">
+          <tr>
+            <th>S/N</th>
+            <th>Matric</th>
+            <th>Coure Code</th>
+            <th>Asignment Title</th>
+          </tr>
+          <tr id="row10">
+            <td>1</td>
+            <td id="matrictable"></td>            
+            <td id="coursecodetable"></td>
+            <td id="coursetitletable"></td>
+        </tr>
+        </table>
+            <button id="viewBtn" onclick="preview()">View Submitted File</button>
+        <input type="number" id="assignmentScore" placeholder="score" oninput="this.value=this.value.slice(0,2)">
+        <button id="recordBtn" onclick="record()">record</button>
+    <div id="filePreview"></div>
+    </div>
+    <div id="ViewMarkedAssignments">
+        <p>Marked Assignment</p>
+      <table id="markedAssingmentsTable">
+          <tr>
+            <th>S/N</th>
+            <th>Matric</th>
+            <th>Coure Code</th>
+            <th>Asignment Title</th>
+            <th>score</th>
+          </tr>
+          <tr id="MarkedRow1">
+            <td>1</td>
+            <td id="markedMatrictable"></td>            
+            <td id="MarkedCoursecodetable"></td>
+            <td id="MarkedCoursetitletable"></td>
+            <td id="scoretable"></td>
+        </tr>
+        </table>
+        <button id="print" onclick="print()">PRINT</button>
+            
+    </div>
+    </div>
+    </div>
+   <script src="index.js"></script>  
+   <div id="denyresubmission">   <form id="denyForm">
+        <input type="text" id="denySameMatric" placeholder="Matric No." oninput="this.value=this.value.slice(0,12)"><br>
+        <select id="resubmitcourse" name="Department">
+            <option>Course Code</option>            
+            <option id="csc" value="NAUB CSC 211">NAUB CSC 211</option>
+            <option id="ift" value="COS 201">COS 2O1</option>
+        </select>
+        <br>
+        <select id="resubmitcoursetitle" name="coursetitle"><option>assignment title</option>
+            <option value="CREATE AND STYLE DIV ASSIGNMENT">CREATE AND STYLE DIV ASSIGNMENT(NAUB CSC 211)</option>
+            <option value="CODE TO TAKE USER INPUT IN JAVA">CODE TO TAKE USER INPUT IN JAVA(COS 201)</option>
+        </select><br><br>
+       <input type="file" name="file" class="fileinput" id="fileInput" accept=".png, .jpg, .jpeg" placeholder="upload file">
+    </form>
+     <button id="denyresubmissionBtn" onclick="return denySameMatric()">Submit</button> </div>
 </body>
 </html>
